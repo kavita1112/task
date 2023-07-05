@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let str = "abbaccdefgee"
+
+        let storted = str.split('').sort().join('')
+
+        let count = 1;
+        let emptyStr = ""
+        console.log(storted)
+
+        for (let i = 0; i < storted.length; i++) {
+            if (storted[i] === storted[i + 1]) {
+                count++
+            } else {
+                emptyStr += storted[i] + count
+                count = 1
+            }
+        }
+
+        console.log(emptyStr)
+
+
+
+
+        let strRev = "practices makes man prefect" + " ";
+        let word = "";
+        let strRevempty = ""
+        for (let i = 0; i < strRev.length; i++) {
+            if (strRev[i] !== " ") {
+                word += strRev[i]
+            }
+            else {
+                strRevempty = word + " " + strRevempty;
+                word = ""
+            }
+        }
+        // strRevempty = word + " " + strRevempty;
+       
+        console.log(strRevempty)
+
+
+        let string = "javascri ptffgjh"
+
+        console.log(string.slice(5,10))
+
+
+    </script>
+</body>
+
+</html>

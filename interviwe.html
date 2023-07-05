@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    <button  id="helo">helo</button>
+    <button  id="name">helo2</button>
+    <p id="output"></p>
+  </div>
+
+ <script>
+
+  let a=1;
+  let b=0;
+  console.log(a++ + ++b + ++a)
+  console.log(a)
+  console.log(b)
+
+
+
+    let scriptTag=document.getElementById("helo")
+    let tag = document.getElementById("name")
+    let output = document.getElementById("output")
+
+    let firstname=scriptTag.addEventListener("click",(event)=>{
+        output.innerText = "firstname"
+        console.log("firstname")
+    })
+
+    let secnodname=tag.addEventListener("click",()=>{
+      output.innerHTML="helo kavitha"
+        console.log("secondname")
+    })
+    
+ </script>
+
+</body>
+</html>

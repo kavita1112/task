@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str = "kavitha"
+        let reversedStr = ''
+        for(let i = str.length-1; i >= 0; i--){
+           reversedStr += str[i];
+        }
+        console.log("Original String :"+str);
+        console.log("Reversed String :"+reversedStr)
+        str===reversedStr? console.log("Given String is a Palindrome"):console.log("Given String is Not a Palindrome")
+       
+
+        let str2 = "aba"
+        let revStr=""
+
+        for(let i = str2.length-1; i >= 0; i--){
+            revStr += str2[i]
+        }
+
+        str2 === revStr ? console.log("poly") : console.log("not poly")
+
+        // if(str2 === revStr){
+        //     console.log("poly")
+        // }else{
+        //     console.log("not poly")
+        // }
+
+
+        let str3 = "abbbbaf"
+
+        let str4 = str3.split('').reverse().join('')
+
+        console.log(str3 === str4)
+    </script>
+</body>
+</html>
