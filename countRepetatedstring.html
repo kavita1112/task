@@ -54,6 +54,51 @@
         console.log(string.slice(5,10))
 
 
+
+
+        let taskStr = "wwwddab"
+
+        let taskStrem = "";
+
+        let taskcount  = 1
+
+        let taskSort = taskStr.split('').sort().join('')
+        
+        console.log(taskSort)
+
+        for(let i = 0; i < taskSort.length; i++){
+
+            if(taskSort[i] === taskSort[i + 1]){
+                count ++
+            }else{
+                taskStrem += taskSort[i] + count
+                count = 1
+            }
+        }
+
+        console.log(taskStrem)
+
+
+
+        let string2 = "wwwddab"
+
+        let string2emp = "";
+
+        let count2 = 1;
+
+        for(let i = 0; i < string2.length; i++){
+
+            if(string2[i] === string2[i+1] ){
+                count2++
+            }else{
+                string2emp += string2[i] + count2
+
+                count2 = 1
+            }
+        }
+
+
+        console.log(string2emp)
     </script>
 </body>
 
